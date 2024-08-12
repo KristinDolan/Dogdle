@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Dogdle from "./componenets/Dogdle";
 
 function App() {
   const [solution, setSolution] = useState(null)
@@ -14,8 +15,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Gaydle</h1>
-      {solution && <div>Solution is: {solution}</div>}
+      <h1>Dogdle</h1>
+      {solution && <Dogdle solution={solution} />}
     </div>
   );
 }
